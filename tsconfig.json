@@ -1,14 +1,13 @@
 {
-	"include": [
-		"./src/**/*"
-	],
 	"compilerOptions": {
-		"strict": true,
-		"esModuleInterop": true,
-		"lib": [
-			"es6",
-			"dom"
-		],
-		"jsx": "react-jsx"
-	}
-}
+	  "target": "ES6",          // Target JS version
+	  "module": "ESNext",       // Module system (for Node.js, use "commonjs")
+	  "jsx": "react",           // Para suporte JSX no React
+	  "strict": true,           // Para modo estrito (recomendado)
+	  "esModuleInterop": true,  // Suporte para imports de CommonJS
+	  "skipLibCheck": true,     // Ignora checagem de tipos em arquivos de bibliotecas
+	  "outDir": "./dist"        // Diretório de saída para o código transpilado
+	},
+	"include": ["src/**/*"]     // Arquivos de origem a serem transpilados
+  }
+  
